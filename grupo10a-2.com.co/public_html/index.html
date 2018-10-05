@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>www.Grupo10A-2.com.co</title>
+
+	<!-- LIBRERIAS DE BOOSTRAP Y JQUERY -->
+	<link rel="stylesheet" href="Boostrap/css/bootstrap.css">
+	<link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
+
+	<!-- jQuery es una libreria de javascript que nos permite realizar
+		consultas de datos sin necesidad de recargar toda la pagina -->
+	<script src="Js/jQuery/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="Boostrap/js/bootstrap.js" type="text/javascript"></script>
+
+
+	<!-- fichero de javascript por medio del cual traemos y enviamos
+		datos al servidor por medio del fichero de php el cual es el 
+		encargado de prosesar los datos en el lado del servidor-->
+	<script type="text/javascript" src="Js/index.js"></script>
+
+</head>
+
+<body>
+	<div class="container col col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+		<div class="card">
+			<div class="card-header text-white bg-dark">
+				<h4>Formulario para el registro de usuarios</h4>
+			</div>
+			<div class="card-body ">
+				<div class="row">
+					<!--FORMULARIO PARA REGISTRAR LOS DATOS DE LOS USUARIOS-->
+					<div class=" col-sm-12 col-md-12 col-lg-3 col-xl-3">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Enter your names">
+						</div>
+						<div class="form-group">
+							<label for="last_name">Last name</label>
+							<input type="text" class="form-control" id="last_name" placeholder="Enter your last names">
+						</div>
+						<div class="form-group">
+							<label for="address">Address</label>
+							<input type="text" class="form-control" id="address" placeholder="Enter address">
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input type="phone" class="form-control" id="phone" placeholder="Enter phone">
+						</div>
+						<div class="form-group">
+							<label for="document">Document</label>
+							<input type="number" class="form-control" id="document" placeholder="Enter your identification">
+
+						</div>
+						<button type="button" id="save_user" class="btn btn-primary">Guardar usuario</button>
+						<br>
+						<br>
+					</div>
+
+
+
+					<!-- TABLA DONDE SE MUESTRAN LOS USUARIOS QUE FUERON REGISTRADOS -->
+
+					<div class=" col-sm-12  col-md-12 col-lg-9 col-xl-9">
+						<div>
+							<table id="show_users" class="table table-bordered table-dark table-striped ">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">N° document</th>
+										<th scope="col">Name</th>
+										<th scope="col">Last Name</th>
+										<th scope="col">Phone</th>
+										<th scope="col">Address</th>
+										<th scope="col">Delete</th>
+										<th scope="col">Update</th>
+
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+
+
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+			<div class="card-footer text-muted text-center text-white bg-dark">
+
+
+				<i>
+					<h6>Realizado por: Grupo 10A-2</h6>
+					<a class="btn btn-outline-info " href="http://grupo10a-2.com.la">Ir a mi segunda página web</a>
+				</i>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
