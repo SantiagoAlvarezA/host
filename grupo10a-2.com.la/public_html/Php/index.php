@@ -80,26 +80,25 @@ function show_countries()
         $msg_array = array('msg' => $msg);
         $data = json_encode($array);
 
-        return $data;
     }
-
+    return $data;
+}
 //bloque para ejecutar las fucniones de acuerdo con la peticion que realize el cliente
-    switch ($action) {
-        case 'insert':
-            echo insert_country(
-                $_POST['country_name'],
-                $_POST['continent'],
-                $_POST['capital'],
-                $_POST['area'],
-                $_POST['number_habitants']
-            );
-            break;
-        case 'show':
-            echo show_countries();
-            break;
+switch ($action) {
+    case 'insert':
+        echo insert_country(
+            $_POST['country_name'],
+            $_POST['continent'],
+            $_POST['capital'],
+            $_POST['area'],
+            $_POST['number_habitants']
+        );
+        break;
+    case 'show':
+        echo show_countries();
+        break;
 
-        default:
-            # code...
-            break;
-    }
+    default:
+        # code...
+        break;
 }
